@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocal o Consonante</title>
+</head>
+
+<body>
+    <form action="">
+        <input type="text" name="caja" id="caja" placeholder="digita la letra" required>
+        <button onclick="buscar();">verificar</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+ function buscar() {
+    var letra = document.getElementById("caja").value;
+    switch (letra) {
+        case 'a':
+            alert("es vocal");
+            break;
+        case 'e':
+            alert("es vocal");
+            break;
+        case 'i':
+            alert("es vocal");
+            break;
+        case 'o':
+            alert("es vocal");
+            break;
+        case 'u':
+            alert("es vocal");
+            break;
+        default:
+            alert("la letra: " + letra + " es consonante");
+    }
+}
